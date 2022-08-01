@@ -2010,10 +2010,10 @@ export interface BarOptions extends Omit<CommonElementOptions, 'borderWidth'> {
 }
 
 export interface BorderRadius {
-  topLeft: number;
-  topRight: number;
-  bottomLeft: number;
-  bottomRight: number;
+  topLeft: number | (params: any) => number;
+  topRight: number | (params: any) => number;
+  bottomLeft: number | (params: any) => number;
+  bottomRight: number | (params: any) => number;
 }
 
 export interface BarHoverOptions extends CommonHoverOptions {
